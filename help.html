@@ -8,8 +8,8 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/help.css">
-    <script src="common.js" defer></script>
-    <script src="help.js" defer></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/pages/help.js"></script>
 </head>
 
 <body>
@@ -37,9 +37,9 @@
                     <label id="form-label-1">Nombre:</label>
                     <input id="form-input-1"><br>
                     <label id="form-label-2">Email:</label>
-                    <input id="form-input-2"><br>
+                    <input id="form-input-2" onsubmit="emailVal()"><br>
                     <label id="form-label-3">Mensaje:</label>
-                    <input id="form-input-3"><br>
+                    <textarea id="form-input-3"></textarea><br>
                     <input id="button-1" type="reset" value="Limpiar">
                     <input id="button-2" type="button" value="Enviar">
                 </form>

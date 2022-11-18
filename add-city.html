@@ -8,8 +8,8 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/add-city.css">
-    <script src="common.js" defer></script>
-    <script src="add-city.js defer"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/pages/add-city.js"></script>
 </head>
 
 <body>
@@ -29,16 +29,16 @@
     <!-- Contenido principal de la página -->
     <main>
         <h2>Agregar Ciudad</h2>
-        <section id="add-city-form">
+        <section>
             <form>
                 <label>Ingrese la ciudad a agregar:</label><br>
                 <input id="add-city-form-label" type="text"><br>
-                <input id="add-city-form-button" type="submit" value="Agregar" onclick="addNewCityToLocalStorage(newCity)"><br>
+                <button id="add-city-form-button" type="button" onclick="addNewCityToLocalStorage(document.getElementById('add-city-form-label').value)">Agregar</button>
             </form>
         </section>
-        <p id="success">Ciudad agregada con exito</p>
-        <p id="error">Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</p>
-        <p id="warning">La ciudad ingresada ya se encuentra almacenada</p>
+        <div id="success">Ciudad agregada con exito</div>
+        <div id="error">Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</div>
+        <div id="warning">La ciudad ingresada ya se encuentra almacenada</div>
     </main>
 
     <footer>

@@ -11,7 +11,7 @@
 }
 
 #add-city-form-button {
-    margin: 10px;
+    margin: 10px 0px 0px 85px;
     padding: 10px;
     font-size: 1em;
     font-weight: bold;
@@ -21,7 +21,8 @@
     border-radius: 10px;
 }
 
-#success {
+#success, #error, #warning{
+    display: none;
     margin: 15px 350px 15px 350px;
     color: white;
     text-align: center;
@@ -31,19 +32,9 @@
 }
 
 #error {
-    margin: 15px 350px 15px 350px;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
     background-color: #dc3545;
 }
 
 #warning {
-    margin: 15px 350px 15px 350px;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
     background-color: #ffc107;
 }

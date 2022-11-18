@@ -1,10 +1,13 @@
 #select-city {
+    height: 45px;
+    width: 300px;
     padding: 10px;
     text-align: left;
-    font-size: 1em;
+    font-size: 1rem;
     background-color: white;
     color: black;
     border-radius: 5px;
+    text-transform: capitalize;
 }
 
 #consult {
@@ -18,7 +21,8 @@
     border-radius: 10px;
 }
 
-#card {
+#info-card {
+    display: none;
     font-weight: bold;
     text-align: center;
     margin: 30px 0px 0px 0px;
